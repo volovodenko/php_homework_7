@@ -49,6 +49,6 @@
         <input type="email" name="newUserEmail" placeholder="E-mail" value="" id="newUserEmail">
         <input type="password" name="newUserPassword" placeholder="Password">
         <button type="submit">Submit</button>
-        <button>Cancel</button>
+        <button id="editConfirmNo">Cancel</button>
     </fieldset>
 </form>

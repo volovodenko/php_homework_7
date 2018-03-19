@@ -4,6 +4,7 @@ $(function () {
         elemsDel = document.getElementsByClassName('del'),
         elemsEdit = document.getElementsByClassName('edit'),
         delConfirmNo = document.getElementById('delConfirmNo'),
+        editConfirmNo = document.getElementById('editConfirmNo'),
         delConfirmYes = document.getElementById('delConfirmYes'),
         newUserEmail = document.getElementById('newUserEmail'),
 		del = document.getElementById('legendDelete');
@@ -23,6 +24,14 @@ $(function () {
             return true;
         };
 
+    }
+
+    if (editConfirmNo) {
+        editConfirmNo.onclick = function () {
+            $("#editForm").slideUp();
+            document.cookie = "user=";
+            return false;
+        };
     }
 
 
